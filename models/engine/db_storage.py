@@ -77,7 +77,7 @@ class DBStorage:
         if cls not in classes.values():
             return None
         all_cls = models.storage.all(cls)
-        for value in all_cls.valus():
+        for value in all_cls.values():
             if(value.id == id):
                 return value
         return None
@@ -94,13 +94,3 @@ class DBStorage:
             count = len(models.storage.all(cls).values())
 
         return count
-
-
-
-
-
-
-
-
-
-
